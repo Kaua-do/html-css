@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84E1AD;
+    margin: auto;
+}
+
+main > div {
+    margin: 0% 20% 0% 20%;
+    background-color: white;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.164);
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #5b8d5b, rgb(26, 41, 26));
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.39);
+    
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+}
+
+nav {
+    padding: 6px;
+}
+
+nav > a:hover {
+    padding: 8px;
+    background-color: #799762;
+}
+
+nav > a {
+    color: #92b677;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.div1 {
+    padding: 14px;
+    box-shadow: 0px 3px 4px 3px rgba(0, 0, 0, 0.164);
+}
+
+.div1 > h1 {
+    font-family: Android;
+    color: #042F1D;
+}
+
+div > h2 {
+    font-family: Android;
+    color: #176B3A;
+    background-image: linear-gradient(to right, #86E2B2, #FEFFFE);
+    padding-left: 8px;
+}
+
+div > p {
+    text-indent: 30px;
+}
+
+p > a::after {
+    content: " 🔗";
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+p > a {
+    color: #165C33;
+    font-weight: bold;
+    background-image: linear-gradient(#7EDFAD, #80E2B1);
+    padding: 5px;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.video {
+    background-color: #043D1C;
+    margin: 0px -14px 30px -14px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.div4 {
+    background-color: #80E2AA;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.164);
+}
+
+.extra {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #165C33;
+    padding: 8px;
+    margin: -16px -16px 2px ;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.164);
+    font-size: 21px;
+}
+
+.lista1 {
+    columns: 2;
+    list-style-type: "✔️ ";
+}
+
+.lista1 > li {
+    text-decoration: underline;
+}
+
+.lista1 > li:hover {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    background-color: #053D1C;
+    color: #4fa171;
+    padding: 8px;
+}
+
+.final {
+    text-align: center;
+}
