@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid black
+        }
+
+        .topo > td {
+            background-color: rgba(128, 128, 128, 0.767);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela em HTML</h1>
+    <table>
+        <tr class="topo">
+            <td>Num</td>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>Escolaridade</td>
+        </tr>
+        <tr>
+            <td colspan="2">A1</td>
+
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td colspan="2">B2</td>
+            
+            <td rowspan="2">D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
