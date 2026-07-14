@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        input#icolor {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="#" method="POST" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="inome" id="inome" required minlength="4" placeholder="Nome">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="text" name="isenha" id="isenha" required minlength="8" placeholder="Min 8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="icolor"></label>
+            <input type="color" name="color" id="icolor">
+        </p>
+
+        <label for="ilist">Opções: </label>
+        <input type="text" name="list" id="ilist" list="lista">
+        <datalist id="lista">
+            <option value="Sei lá 1"></option>
+            <option value="Sei lá 2 né"></option>
+            <option value="Não sei, 3?"></option>
+        </datalist>
+    </form> 
+</body>
+</html>
