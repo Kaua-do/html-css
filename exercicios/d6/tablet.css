@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to top, #4B969B, #5F2E82);
+    }
+
+    section {
+        width: 80vw;
+        height: 280px;
+    }
+
+    div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    div#formulario > h1 {
+        text-align: center;
+    }
+
+    div#formulario {
+        float: right;
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    form .botao {
+        height: 34px;
+    }
+}
