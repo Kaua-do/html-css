@@ -9,32 +9,45 @@
             margin: 0px;
         }
         div.container {
-            height: 200px;
-            width: 100vw;
             background-color: aquamarine;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row nowrap
         }
 
         .items {
+            flex-basis: 150px;
             background-color: rgb(192, 3, 3);
             border: 1px solid black;
             text-align: center;
-            Exemplo de bloco 
+        }
+
+        .items:nth-child(1) {
+            flex-shrink: 0;
+            flex-grow: 0;;
+        }
+
+        .items:nth-child(2) {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .items:nth-child(3) {
+            flex-shrink: 0;
+            flex-grow: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <li class="items">Exemplo de bloco A</li>
-        <li class="items">Exemplo de bloco B</li>
-        <li class="items">Exemplo de bloco C</li>
-        <li class="items">Exemplo de bloco D</li>
-        <li class="items">Exemplo de bloco A</li>
-        <li class="items">Exemplo de bloco B</li>
-        <li class="items">Exemplo de bloco C</li>
-        <li class="items">Exemplo de bloco D</li>
+        <div>
+            <li class="items">Exemplo de bloco A</li>
+        </div>
+        <div>
+            <li class="items">Exemplo de bloco B</li>
+        </div>
+        <div>
+            <li class="items">Exemplo de bloco C</li>
+        </div>
     </div>
 </body>
 </html>
