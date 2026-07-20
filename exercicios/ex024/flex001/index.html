@@ -8,6 +8,7 @@
         * {
             margin: 0px;
         }
+
         div.container {
             background-color: aquamarine;
             display: flex;
@@ -15,15 +16,16 @@
         }
 
         .items {
-            flex-basis: 150px;
+            color: white;
             background-color: rgb(192, 3, 3);
             border: 1px solid black;
             text-align: center;
+            flex-basis: 400px;
         }
 
         .items:nth-child(1) {
-            flex-shrink: 0;
-            flex-grow: 0;;
+            flex-shrink: 1;
+            flex-grow: 2;;
         }
 
         .items:nth-child(2) {
@@ -32,21 +34,21 @@
         }
 
         .items:nth-child(3) {
-            flex-shrink: 0;
-            flex-grow: 0;
+            flex-shrink: 1;
+            flex-grow: 4;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div>
-            <li class="items">Exemplo de bloco A</li>
+        <div class="items">
+            Exemplo de bloco A</li>
         </div>
-        <div>
-            <li class="items">Exemplo de bloco B</li>
+        <div class="items">
+            Exemplo de bloco B</li>
         </div>
-        <div>
-            <li class="items">Exemplo de bloco C</li>
+        <div class="items">
+            Exemplo de bloco C</li>
         </div>
     </div>
 </body>
